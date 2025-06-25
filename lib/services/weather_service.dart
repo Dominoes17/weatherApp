@@ -105,6 +105,7 @@ class WeatherService {
     serviceEnabled = await Geolocator.isLocationServiceEnabled();
     if (!serviceEnabled) {
       print('Location services are disabled.');
+
       return null;
     }
 
@@ -114,6 +115,7 @@ class WeatherService {
       permission = await Geolocator.requestPermission();
       if (permission == LocationPermission.denied) {
         print('Location permissions are denied');
+
         return null;
       }
     }
