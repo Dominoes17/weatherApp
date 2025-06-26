@@ -177,8 +177,7 @@ class _CurrentWeatherState extends ConsumerState<CurrentWeather> {
                 ),
               ),
 
-              SizedBox(height: 10),
-              Text("Download APK"),
+              
             ],
           );
   }
